@@ -1,0 +1,421 @@
+<section class="menu m-auto w-[1000px] max-w-[1100px] py-2">
+  <div class="flex flex-wrap justify-around items-center relative">
+    <!-- MEGAMENU -->
+    <div class="relative group text-sm">
+      <button
+        class="cursor-pointer flex items-center gap-1 px-2 py-1 hover:text-blue-600"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <strong>Todas categorias</strong>
+        <span class="transition-transform duration-300 group-hover:rotate-180">▼</span>
+      </button>
+
+      <div
+        class="absolute top-full left-0 w-[800px] bg-white shadow-xl p-5 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out pointer-events-none group-hover:pointer-events-auto z-30 flex gap-12"
+      >
+        <!-- Categorias -->
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Feminino</h4>
+          <ul class="space-y-1 text-base text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Blusas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Vestidos</a></li>
+            <li><a href="#" class="hover:text-blue-600">Saias</a></li>
+            <li><a href="#" class="hover:text-blue-600">Calçados</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Masculino</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Camisas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Calças</a></li>
+            <li><a href="#" class="hover:text-blue-600">Bermudas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Tênis</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Infantil</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Roupas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Brinquedos</a></li>
+            <li><a href="#" class="hover:text-blue-600">Calçados</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Esporte</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Camisas de time</a></li>
+            <li><a href="#" class="hover:text-blue-600">Shorts</a></li>
+            <li><a href="#" class="hover:text-blue-600">Acessórios</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Ofertas</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Descontos 50%</a></li>
+            <li><a href="#" class="hover:text-blue-600">Leve 3 Pague 2</a></li>
+            <li><a href="#" class="hover:text-blue-600">Últimas unidades</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Marcas</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Nike</a></li>
+            <li><a href="#" class="hover:text-blue-600">Adidas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Puma</a></li>
+            <li><a href="#" class="hover:text-blue-600">Fila</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menus individuais -->
+    <!-- Crie uma função/componente pra repetir isso se quiser depois -->
+    <div class="relative group text-xs">
+      <button
+        class="cursor-pointer flex items-center gap-1 px-2 py-1 hover:text-blue-600"
+      >
+        <strong>Feminino</strong>
+        <span class="transition-transform duration-300 group-hover:rotate-180">▼</span>
+      </button>
+
+      <div
+        class="absolute top-full right-[-400px] w-[700px] bg-white shadow-xl p-5 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out pointer-events-none group-hover:pointer-events-auto z-30 flex gap-12 justify-between"
+      >
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Roupas</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Blusas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Vestidos</a></li>
+            <li><a href="#" class="hover:text-blue-600">Saias</a></li>
+            <li><a href="#" class="hover:text-blue-600">Conjuntos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Calçados</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Tênis</a></li>
+            <li><a href="#" class="hover:text-blue-600">Sandálias</a></li>
+            <li><a href="#" class="hover:text-blue-600">Botas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Chinelos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Acessórios</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Bolsas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Óculos</a></li>
+            <li><a href="#" class="hover:text-blue-600">Bijuterias</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Promoções</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Últimas unidades</a></li>
+            <li><a href="#" class="hover:text-blue-600">Novidades</a></li>
+            <li><a href="#" class="hover:text-blue-600">Outlet</a></li>
+          </ul>
+        </div>
+        <div class="relative w-32 h-40 rounded overflow-hidden shadow-md group">
+          <img
+            src="../imgs/caneca.jpg"
+            alt="Novidades"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-[10px] text-center px-2"
+          >
+            <span class="font-semibold">Confira os produtos que acabaram de chegar!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exemplo: Masculino -->
+    <div class="relative group text-xs">
+      <button
+        class="flex items-center gap-1 px-2 py-1 hover:text-blue-600"
+        aria-haspopup="true"
+      >
+        <strong>Masculino</strong>
+        <span class="transition-transform duration-300 group-hover:rotate-180">▼</span>
+      </button>
+      <div
+        class="absolute top-full left-[-350px] w-[700px] bg-white shadow-xl p-5 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out pointer-events-none group-hover:pointer-events-auto z-30 flex gap-12 justify-between"
+      >
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Vestuário</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Camisetas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Camisas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Calças</a></li>
+            <li><a href="#" class="hover:text-blue-600">Bermudas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Jaquetas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Calçados</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Tênis</a></li>
+            <li><a href="#" class="hover:text-blue-600">Sapatos</a></li>
+            <li><a href="#" class="hover:text-blue-600">Chinelos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Acessórios</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Bonés</a></li>
+            <li><a href="#" class="hover:text-blue-600">Mochilas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Relógios</a></li>
+            <li><a href="#" class="hover:text-blue-600">Cintos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Marcas</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Nike</a></li>
+            <li><a href="#" class="hover:text-blue-600">Adidas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Puma</a></li>
+            <li><a href="#" class="hover:text-blue-600">Reserva</a></li>
+          </ul>
+        </div>
+        <div class="relative w-32 h-40 rounded overflow-hidden shadow-md group">
+          <img
+            src="../imgs/caneca.jpg"
+            alt="Novidades"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-[10px] text-center px-2"
+          >
+            <span class="font-semibold">Confira os produtos que acabaram de chegar!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Exemplo: MARCAS -->
+    <div class="relative group text-xs">
+      <button
+        class="flex items-center gap-1 px-2 py-1 hover:text-blue-600"
+        aria-haspopup="true"
+      >
+        <strong>Infantil</strong>
+        <span class="transition-transform duration-300 group-hover:rotate-180">▼</span>
+      </button>
+      <div
+        class="absolute top-full left-[-500px] w-[700px] bg-white shadow-xl p-5 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out pointer-events-none group-hover:pointer-events-auto z-30 flex gap-12 justify-between"
+      >
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Meninas</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Vestidos</a></li>
+            <li><a href="#" class="hover:text-blue-600">Blusas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Calças</a></li>
+            <li><a href="#" class="hover:text-blue-600">Tênis</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Meninos</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Camisetas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Bermudas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Moletons</a></li>
+            <li><a href="#" class="hover:text-blue-600">Tênis</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Bebês</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Body</a></li>
+            <li><a href="#" class="hover:text-blue-600">Macacões</a></li>
+            <li><a href="#" class="hover:text-blue-600">Conjuntos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Acessórios</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Mochilas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Bonés</a></li>
+            <li><a href="#" class="hover:text-blue-600">Chapéus</a></li>
+          </ul>
+        </div>
+        <div class="relative w-32 h-40 rounded overflow-hidden shadow-md group">
+          <img
+            src="../imgs/caneca.jpg"
+            alt="Novidades"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-[10px] text-center px-2"
+          >
+            <span class="font-semibold">Confira os produtos que acabaram de chegar!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative group text-xs">
+      <button
+        class="flex items-center gap-1 px-2 py-1 hover:text-blue-600"
+        aria-haspopup="true"
+      >
+        <strong>Marcas</strong>
+        <span class="transition-transform duration-300 group-hover:rotate-180">▼</span>
+      </button>
+      <div
+        class="absolute top-full left-[-500px] w-[700px] bg-white shadow-xl p-5 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out pointer-events-none group-hover:pointer-events-auto z-30 flex gap-12 justify-between"
+      >
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Esportivas</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Nike</a></li>
+            <li><a href="#" class="hover:text-blue-600">Adidas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Puma</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Casual</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Reserva</a></li>
+            <li><a href="#" class="hover:text-blue-600">Colcci</a></li>
+            <li><a href="#" class="hover:text-blue-600">Hering</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Infantis</h4>
+
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Lilica Ripilica</a></li>
+            <li><a href="#" class="hover:text-blue-600">Marisol</a></li>
+            <li><a href="#" class="hover:text-blue-600">Pampili</a></li>
+          </ul>
+        </div>
+        <div class="relative w-32 h-40 rounded overflow-hidden shadow-md group">
+          <img
+            src="../imgs/caneca.jpg"
+            alt="Novidades"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-[10px] text-center px-2"
+          >
+            <span class="font-semibold">Confira os produtos que acabaram de chegar!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative group text-xs">
+      <button
+        class="flex items-center gap-1 px-2 py-1 hover:text-blue-600"
+        aria-haspopup="true"
+      >
+        <span class="transition-transform duration-300 group-hover:rotate-180">▼</span>
+        <strong>Esportes</strong>
+      </button>
+      <div
+        class="absolute top-full right-[200px] w-[700px] translate-x-[50%] bg-white shadow-xl p-5 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out pointer-events-none group-hover:pointer-events-auto z-30 flex gap-12 justify-between"
+      >
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Futebol</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Chuteiras</a></li>
+            <li><a href="#" class="hover:text-blue-600">Camisas de Time</a></li>
+            <li><a href="#" class="hover:text-blue-600">Bolas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Corrida</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Tênis de Corrida</a></li>
+            <li><a href="#" class="hover:text-blue-600">Roupas Esportivas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Acessórios</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Academia</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Camisetas Dry Fit</a></li>
+            <li><a href="#" class="hover:text-blue-600">Luvas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Garrafas</a></li>
+          </ul>
+        </div>
+        <div class="relative w-32 h-40 rounded overflow-hidden shadow-md group">
+          <img
+            src="../imgs/caneca.jpg"
+            alt="Novidades"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-[10px] text-center px-2"
+          >
+            <span class="font-semibold">Confira os produtos que acabaram de chegar!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative group text-xs">
+      <button
+        class="flex items-center gap-1 px-2 py-1 hover:text-blue-600"
+        aria-haspopup="true"
+      >
+        <strong>Ofertas</strong>
+        <span class="transition-transform duration-300 group-hover:rotate-180">▼</span>
+      </button>
+      <div
+        class="absolute top-full right-[-10px] w-[700px] translate-x-[0%] bg-white shadow-xl p-5 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out pointer-events-none group-hover:pointer-events-auto z-30 flex gap-12 justify-between"
+      >
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Ofertas por categoria</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Moda Feminina</a></li>
+            <li><a href="#" class="hover:text-blue-600">Moda Masculina</a></li>
+            <li><a href="#" class="hover:text-blue-600">Moda Infantil</a></li>
+            <li><a href="#" class="hover:text-blue-600">Calçados</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Por desconto</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Mais de 50%</a></li>
+            <li><a href="#" class="hover:text-blue-600">De 30% a 50%</a></li>
+            <li><a href="#" class="hover:text-blue-600">Até 30%</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-800 text-sm mb-2">Ofertas por marca</h4>
+          <ul class="space-y-1 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-600">Nike</a></li>
+            <li><a href="#" class="hover:text-blue-600">Adidas</a></li>
+            <li><a href="#" class="hover:text-blue-600">Reserva</a></li>
+          </ul>
+        </div>
+        <div class="relative w-32 h-40 rounded overflow-hidden shadow-md group">
+          <img
+            src="../imgs/caneca.jpg"
+            alt="Novidades"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-[10px] text-center px-2"
+          >
+            <span class="font-semibold">Confira os produtos que acabaram de chegar!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repete os outros grupos como Masculino, Infantil etc. -->
+
+    <!-- Repete o restante igual -->
+  </div>
+</section>

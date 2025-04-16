@@ -1,0 +1,175 @@
+<header class="flex p-3 justify-between">
+  <div class="flex ml-[100px]">
+    <img src="/Front/imgs/AVANTI.png" class="h-8" alt="" />
+    <div class="relative">
+      <img src="../imgs/lupa.png" class="absolute top-0 right-2" alt="" />
+      <input
+        class="border-[#eeeee] border-2 rounded-lg ml-14 w-[450px] h-8 placeholder-slate-600 text-xs focus:outline-none px-5 py-2"
+        type="search"
+        placeholder="Digite aqui o que você procura"
+      />
+    </div>
+  </div>
+  <section class="w-[500px]">
+    <div>
+      <div class="flex justify-between">
+        <div class="flex">
+          <figure>
+            <img
+              src="../imgs/contato.png"
+              alt=""
+              class="cursor-pointer"
+              id="abrirModal"
+            />
+          </figure>
+          <div>
+            <p class="w-10 text-[11px] ml-2 flex">Olá</p>
+            <p class="w-20 text-[11px] ml-2 flex flex-wrap">Nome cliente!</p>
+          </div>
+          <div class="mr-0 w-20">
+            <div class="relative">
+              <img
+                src="../imgs/carrinho.png"
+                alt="Carrinho"
+                class="cursor-pointer"
+                id="carrinho"
+              />
+              <span
+                id="contador-carrinho"
+                class="absolute -top-2 right-10 bg-blue-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full"
+              >
+                0
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center">
+          <img src="../imgs//pin-de-localizacao.png" alt="" />
+          <div class="relative w-44 ml-2">
+            <input
+              type="number"
+              id="cepInput"
+              placeholder="Confira seu CEP"
+              class="w-full pl-2 pr-8 py-1 text-xs border border-gray-300 rounded-full focus:outline-none focus:ring-1 focus:ring-blue-500"
+            />
+            <button
+              onclick="buscarCEP()"
+              id="btnBuscarCEP"
+              class="absolute right-1 top-3 -translate-y-1/2 text-blue-600 text-xs"
+              title="Buscar CEP"
+            >
+              <span id="iconeBusca" class="">🔍</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Modal -->
+  <div
+    id="modal"
+    class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden justify-center items-center"
+  >
+    <div
+      class="bg-white w-[90%] max-w-lg max-h-[90vh] h-auto rounded-lg p-6 overflow-y-auto relative"
+    >
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-4">
+        <img src="../imgs/AVANTI.png" alt="Logo" class="h-10" />
+        <button
+          onclick="fecharModal()"
+          class="text-lg font-bold mt-5 text-gray-700 hover:text-red-500"
+        >
+          X
+        </button>
+      </div>
+
+      <!-- Corpo -->
+      <div class="">
+        <h2 class="text-xl font-semibold mb-2">Bem-vindo!</h2>
+        <p class="text-sm mb-4">Por favor, selecione um provedor para criar sua conta:</p>
+
+        <div class="flex justify-around mb-4">
+          <a
+            href="https://www.linkedin.com/in/alexandre-carvalho-4b178a26b/"
+            target="_blank"
+          >
+            <img src="../imgs/linke.png" alt="LinkedIn" class="w-8 h-8" />
+          </a>
+          <a href="https://github.com/AlexandeCrv" target="_blank">
+            <img src="../imgs/git.png" alt="GitHub" class="w-8 h-8" />
+          </a>
+          <a href="#">
+            <img src="../imgs/opera.png" alt="Outro" class="w-8 h-8" />
+          </a>
+        </div>
+
+        <div class="text-center my-4 font-semibold">ou</div>
+
+        <form>
+          <label class="text-sm">Nome completo</label>
+          <input
+            type="text"
+            placeholder="Seu nome completo"
+            class="w-full border p-2 rounded mb-3 text-sm"
+          />
+
+          <label class="text-sm">Email</label>
+          <input
+            type="email"
+            placeholder="Seu email"
+            class="w-full border p-2 rounded mb-3 text-sm"
+          />
+
+          <label class="text-sm">Senha</label>
+          <div class="relative mb-3">
+            <input
+              type="password"
+              id="senha"
+              placeholder="********"
+              class="w-full border p-2 rounded text-sm"
+            />
+            <span
+              onclick="toggleSenha('senha')"
+              class="absolute right-2 top-2 cursor-pointer"
+              >👁️</span
+            >
+          </div>
+
+          <label class="text-sm">Confirme a senha</label>
+          <div class="relative mb-3">
+            <input
+              type="password"
+              id="senha2"
+              placeholder="********"
+              class="w-full border p-2 rounded text-sm"
+            />
+            <span
+              onclick="toggleSenha('senha2')"
+              class="absolute right-2 top-2 cursor-pointer"
+              >👁️</span
+            >
+          </div>
+
+          <div class="flex flex-col gap-2 text-sm mb-4">
+            <label><input type="checkbox" /> Aceito os termos e condições</label>
+            <label><input type="checkbox" /> Manter-me conectado</label>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-[#079157c5] text-white py-2 rounded hover:bg-green-600 transition"
+          >
+            Registrar
+          </button>
+
+          <p class="mt-3 text-center text-sm">
+            Já é cadastrado?
+            <strong class="text-blue-600 cursor-pointer">Fazer login</strong>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>

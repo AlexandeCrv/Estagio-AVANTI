@@ -1,0 +1,105 @@
+<!-- html/index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Avanti</title>
+    <link rel="stylesheet" href="../style/output.css" />
+    <link rel="stylesheet" href="../style/css.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="">
+    <div
+      class="overflow-hidden h-5 text-white text-xs relative bg-gradient-to-r from-[#005cff] via-[#16a34a] to-[#22c55e]"
+    >
+      <div class="flex animate-marquee whitespace-nowrap gap-x-24">
+        <!-- 🔁 Anúncios -->
+        <div class="flex items-center px-4 gap-1">
+          <span>Ganhe</span>
+          <strong class="bg-[#6220c1] h-4 px-1 flex items-center strong">R$10,00</strong>
+          <span>de desconto no seu primeiro pedido. Use o cupom</span>
+          <span class="font-light ml-1 animate-pulse hover:animate-bounce"
+            >DESCONTO10</span
+          >
+        </div>
+        <div class="flex items-center gap-1">
+          <span class="mx-2 text-white">•</span>
+        </div>
+        <div class="flex items-center px-4 gap-1">
+          <span class="strong bg-[#6220c1] h-4 px-1 flex items-center">Frete grátis</span>
+          <span>nas compras acima de R$99,00</span>
+          <span class="font-light ml-1">APROVEITE</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <span class="mx-2 text-white">•</span>
+        </div>
+        <div class="flex items-center px-4 gap-1">
+          <span>Parcele em até</span>
+          <strong class="bg-[#6220c1] h-4 px-1 flex items-center strong"
+            >6x sem juros</strong
+          >
+          <span>no cartão</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <span class="mx-2 text-white">•</span>
+        </div>
+        <div class="flex items-center px-4 gap-1">
+          <span>Ganhe</span>
+          <strong class="bg-[#6220c1] h-4 px-1 flex items-center strong">R$10,00</strong>
+          <span>de desconto no seu primeiro pedido. Use o cupom</span>
+          <span class="font-light ml-1">DESCONTO10</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <span class="mx-2 text-white">•</span>
+        </div>
+        <div class="flex items-center px-4 gap-1">
+          <span class="strong">Frete grátis</span>
+          <span>nas compras acima de R$99,00</span>
+          <span class="font-light ml-1">APROVEITE</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <span class="mx-2 text-white">•</span>
+        </div>
+        <div class="flex items-center px-4 gap-1">
+          <span>Parcele em até</span>
+          <strong class="bg-[#6220c1] h-4 px-1 flex items-center strong"
+            >6x sem juros</strong
+          >
+          <span>no cartão</span>
+        </div>
+      </div>
+    </div>
+
+    <div data-component="header"></div>
+    <div data-component="subheader" class=""></div>
+    <div data-component="sec1"></div>
+    <div data-component="sec2" class="h-[500px]"></div>
+    <div data-component="sec3" class="h-[600px]"></div>
+    <div data-component="sec4" class="h-[600px]"></div>
+    <div data-component="sec5" class="h-[600px]"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/carrinho.js"></script>
+
+    <script src="../js/sec5.js" defer></script>
+    <script src="../js/sec1.js" defer></script>
+    <script src="../js/cep.js" defer></script>
+    <script src="../js/modal.js" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+      });
+    </script>
+  </body>
+</html>
