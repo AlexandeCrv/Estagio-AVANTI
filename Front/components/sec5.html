@@ -26,89 +26,28 @@
     >
       <!-- Card de produto -->
       <div
-        class="relative min-w-[300px] border rounded shadow-md h-[470px] p-2 group overflow-hidden"
+        class="relative min-w-[300px] border rounded shadow-md h-[500px] p-2 group overflow-hidden"
       >
         <!-- Wrapper da imagem com altura fixa -->
-        <div class="relative h-[360px] overflow-hidden rounded-sm">
-          <!-- Imagem principal -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F2821535-880-auto&w=1280&q=100"
-            alt="Produto"
-            class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
-          />
+        <div class="relative h-[380px] overflow-hidden rounded-sm">
+          <div class="relative w-full h-full group overflow-hidden">
+            <!-- Imagem principal -->
+            <img
+              src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3235483-880-auto&w=1280&q=100"
+              alt="Produto"
+              class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+            />
 
-          <!-- Imagem ao passar o mouse -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F2821542-600-auto&w=360&q=100"
-            alt="Produto Hover"
-            class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
-          />
-
-          <!-- Barrinha com tamanhos e botão -->
-          <div
-            class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md py-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out flex gap-2 items-start"
-          >
-            <!-- Tamanhos -->
-            <div class="flex gap-1">
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                P
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                M
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                G
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                GG
-              </button>
-            </div>
-
-            <!-- Botão Adicionar -->
-            <button
-              class="bg-black text-white text-sm px-4 py-2 rounded hover:bg-gray-800 transition"
-            >
-              Adicionar
-            </button>
+            <!-- Vídeo que aparece no hover -->
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+              src="https://download-video-ak.vimeocdn.com/v3-1/playback/738f8e05-0a13-4dcb-8a31-16e15317f81d/d044da0c-e5ef5d60?__token__=st=1744854038~exp=1744868438~acl=%2Fv3-1%2Fplayback%2F738f8e05-0a13-4dcb-8a31-16e15317f81d%2Fd044da0c-e5ef5d60%2A~hmac=f8d816d5663db45b418e36fcdfc565bc56d540f5eb770067abc0f838422b3578&r=dXMtd2VzdDE%3D"
+            ></video>
           </div>
-        </div>
-
-        <!-- Informações do produto -->
-        <div class="mt-2 space-y-1">
-          <p class="text-sm text-gray-700">Camisa polo masculina manga curta - branco</p>
-          <div class="flex items-center gap-2">
-            <p class="text-sm text-gray-400 line-through">R$ 159,99</p>
-            <p class="text-lg font-bold text-gray-900">R$ 99,99</p>
-          </div>
-          <p class="text-sm text-gray-500">1x R$ 99,99 sem juros</p>
-        </div>
-      </div>
-      <div
-        class="relative min-w-[300px] border rounded shadow-md h-[470px] p-2 group overflow-hidden"
-      >
-        <!-- Wrapper da imagem com altura fixa -->
-        <div class="relative h-[360px] overflow-hidden rounded-sm">
-          <!-- Imagem principal -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F2513293-880-auto&w=1280&q=100"
-            alt="Produto"
-            class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
-          />
-
-          <!-- Imagem ao passar o mouse -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F2513310-880-auto&w=1280&q=100"
-            alt="Produto Hover"
-            class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
-          />
 
           <!-- Barrinha com tamanhos e botão -->
           <div
@@ -150,33 +89,36 @@
         <!-- Informações do produto -->
         <div class="mt-2 space-y-1">
           <p class="text-sm text-gray-700">
-            Calça jeans infantil menina com pregas - azul
+            Shorts feminino em alfaiataria debochada - caqui
           </p>
           <div class="flex items-center gap-2">
-            <p class="text-sm text-gray-400 line-through">R$ 159,99</p>
-            <p class="text-lg font-bold text-gray-900">R$ 89,99</p>
+            <p class="text-sm text-gray-400 line-through">R$ 255,99</p>
+            <p class="text-lg font-bold text-gray-900">R$ 219,99</p>
           </div>
-          <p class="text-sm text-gray-500">1x R$ 89,99 sem juros</p>
+          <p class="text-sm text-gray-500">4x R$ 55,00 sem juros</p>
         </div>
       </div>
       <div
-        class="relative min-w-[300px] border rounded shadow-md h-[470px] p-2 group overflow-hidden"
+        class="relative min-w-[300px] border rounded shadow-md h-[500px] p-2 group overflow-hidden"
       >
         <!-- Wrapper da imagem com altura fixa -->
-        <div class="relative h-[360px] overflow-hidden rounded-sm">
+        <div class="relative h-[380px] overflow-hidden rounded-sm">
           <!-- Imagem principal -->
           <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F2591815-880-auto&w=1280&q=100"
+            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3207269-880-auto&w=1280&q=100"
             alt="Produto"
             class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
           />
 
           <!-- Imagem ao passar o mouse -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F2591822-880-auto&w=1280&q=100"
-            alt="Produto Hover"
-            class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
-          />
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+            src="https://player.vimeo.com/progressive_redirect/playback/1028547585/rendition/1080p/file.mp4?loc=external&signature=a584d5fd20f25ad83be23c6c411a214083584ee320e8b0036fe94b6abae1a191"
+          ></video>
 
           <!-- Barrinha com tamanhos e botão -->
           <div
@@ -217,32 +159,37 @@
 
         <!-- Informações do produto -->
         <div class="mt-2 space-y-1">
-          <p class="text-sm text-gray-700">Jaqueta bomber infantil toddler - marrom</p>
+          <p class="text-sm text-gray-700">
+            Camiseta básica unissex manga curta sem degradê- preto
+          </p>
           <div class="flex items-center gap-2">
-            <p class="text-sm text-gray-400 line-through">R$ 239,99</p>
-            <p class="text-lg font-bold text-gray-900">R$ 129,99</p>
+            <p class="text-sm text-gray-400 line-through">R$ 119,99</p>
+            <p class="text-lg font-bold text-gray-900">R$ 79,99</p>
           </div>
-          <p class="text-sm text-gray-500">1x R$ 129,99 sem juros</p>
+          <p class="text-sm text-gray-500">1x R$ 79,99 sem juros</p>
         </div>
       </div>
       <div
-        class="relative min-w-[300px] border rounded shadow-md h-[470px] p-2 group overflow-hidden"
+        class="relative min-w-[300px] border rounded shadow-md h-[500px] p-2 group overflow-hidden"
       >
         <!-- Wrapper da imagem com altura fixa -->
-        <div class="relative h-[360px] overflow-hidden rounded-sm">
+        <div class="relative h-[380px] overflow-hidden rounded-sm">
           <!-- Imagem principal -->
           <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3461936-880-auto&w=1280&q=100"
+            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F1249689-880-auto&w=1280&q=100"
             alt="Produto"
             class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
           />
 
           <!-- Imagem ao passar o mouse -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3461983-880-auto&w=1280&q=100"
-            alt="Produto Hover"
-            class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
-          />
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+            src="https://cf.gruposoma.animale.com.br/hering_ecomm/Hering/K4UV2ESI.mp4"
+          ></video>
 
           <!-- Barrinha com tamanhos e botão -->
           <div
@@ -283,7 +230,80 @@
 
         <!-- Informações do produto -->
         <div class="mt-2 space-y-1">
-          <p class="text-sm text-gray-700">Blusão feminino em moletom - creme</p>
+          <p class="text-sm text-gray-700">
+            Blusão feminino em tricô texturizado com fendas - rosa
+          </p>
+          <div class="flex items-center gap-2">
+            <p class="text-sm text-gray-400 line-through">R$ 199,99</p>
+            <p class="text-lg font-bold text-gray-900">R$ 69,99</p>
+          </div>
+          <p class="text-sm text-gray-500">1x R$ 69,99 sem juros</p>
+        </div>
+      </div>
+      <div
+        class="relative min-w-[300px] border rounded shadow-md h-[500px] p-2 group overflow-hidden"
+      >
+        <!-- Wrapper da imagem com altura fixa -->
+        <div class="relative h-[380px] overflow-hidden rounded-sm">
+          <!-- Imagem principal -->
+          <img
+            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3228390-880-auto&w=1280&q=100"
+            alt="Produto"
+            class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+          />
+
+          <!-- Imagem ao passar o mouse -->
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+            src="https://cf.gruposoma.animale.com.br/hering_ecomm/Hering/K0M0YRBSI.mp4"
+          ></video>
+
+          <!-- Barrinha com tamanhos e botão -->
+          <div
+            class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md py-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out flex gap-2 items-start"
+          >
+            <!-- Tamanhos -->
+            <div class="flex gap-1">
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                P
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                M
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                G
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                GG
+              </button>
+            </div>
+
+            <!-- Botão Adicionar -->
+            <button
+              class="bg-black text-white text-sm px-4 py-2 rounded hover:bg-gray-800 transition"
+            >
+              Adicionar
+            </button>
+          </div>
+        </div>
+
+        <!-- Informações do produto -->
+        <div class="mt-2 space-y-1">
+          <p class="text-sm text-gray-700">
+            Jaqueta puffer feminina matelassê ondulada - amarelo
+          </p>
           <div class="flex items-center gap-2">
             <p class="text-sm text-gray-400 line-through">R$ 279,99</p>
             <p class="text-lg font-bold text-gray-900">R$ 219,99</p>
@@ -292,287 +312,26 @@
         </div>
       </div>
       <div
-        class="relative min-w-[300px] border rounded shadow-md h-[470px] p-2 group overflow-hidden"
+        class="relative min-w-[300px] border rounded shadow-md h-[500px] p-2 group overflow-hidden"
       >
         <!-- Wrapper da imagem com altura fixa -->
-        <div class="relative h-[360px] overflow-hidden rounded-sm">
+        <div class="relative h-[380px] overflow-hidden rounded-sm">
           <!-- Imagem principal -->
           <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3455674-880-auto&w=1280&q=100"
+            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F2705026-880-auto&w=1280&q=100"
             alt="Produto"
             class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
           />
 
           <!-- Imagem ao passar o mouse -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3455690-880-auto&w=1280&q=100"
-            alt="Produto Hover"
-            class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
-          />
-
-          <!-- Barrinha com tamanhos e botão -->
-          <div
-            class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md py-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out flex gap-2 items-start"
-          >
-            <!-- Tamanhos -->
-            <div class="flex gap-1">
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                P
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                M
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                G
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                GG
-              </button>
-            </div>
-
-            <!-- Botão Adicionar -->
-            <button
-              class="bg-black text-white text-sm px-4 py-2 rounded hover:bg-gray-800 transition"
-            >
-              Adicionar
-            </button>
-          </div>
-        </div>
-
-        <!-- Informações do produto -->
-        <div class="mt-2 space-y-1">
-          <p class="text-sm text-gray-700">Blazer feminino oversized em lã- marrom</p>
-          <div class="flex items-center gap-2">
-            <p class="text-sm text-gray-400 line-through">R$ 499,99</p>
-            <p class="text-lg font-bold text-gray-900">R$ 459,99</p>
-          </div>
-          <p class="text-sm text-gray-500">6x R$ 76,67 sem juros</p>
-        </div>
-      </div>
-      <div
-        class="relative min-w-[300px] border rounded shadow-md h-[470px] p-2 group overflow-hidden"
-      >
-        <!-- Wrapper da imagem com altura fixa -->
-        <div class="relative h-[360px] overflow-hidden rounded-sm">
-          <!-- Imagem principal -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3452120-880-auto&w=1280&q=100"
-            alt="Produto"
-            class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
-          />
-
-          <!-- Imagem ao passar o mouse -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3452127-880-auto&w=1280&q=100"
-            alt="Produto Hover"
-            class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
-          />
-
-          <!-- Barrinha com tamanhos e botão -->
-          <div
-            class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md py-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out flex gap-2 items-start"
-          >
-            <!-- Tamanhos -->
-            <div class="flex gap-1">
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                P
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                M
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                G
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                GG
-              </button>
-            </div>
-
-            <!-- Botão Adicionar -->
-            <button
-              class="bg-black text-white text-sm px-4 py-2 rounded hover:bg-gray-800 transition"
-            >
-              Adicionar
-            </button>
-          </div>
-        </div>
-
-        <!-- Informações do produto -->
-        <div class="mt-2 space-y-1">
-          <p class="text-sm text-gray-700">Blusa básica feminina manga longa - marrom</p>
-          <div class="flex items-center gap-2">
-            <p class="text-sm text-gray-400 line-through">R$ 129,99</p>
-            <p class="text-lg font-bold text-gray-900">R$ 99,99</p>
-          </div>
-          <p class="text-sm text-gray-500">1x R$ 99,99 sem juros</p>
-        </div>
-      </div>
-      <div
-        class="relative min-w-[300px] border rounded shadow-md h-[470px] p-2 group overflow-hidden"
-      >
-        <!-- Wrapper da imagem com altura fixa -->
-        <div class="relative h-[360px] overflow-hidden rounded-sm">
-          <!-- Imagem principal -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3426585-880-auto&w=1280&q=100"
-            alt="Produto"
-            class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
-          />
-
-          <!-- Imagem ao passar o mouse -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3426605-880-auto&w=1280&q=100"
-            alt="Produto Hover"
-            class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
-          />
-
-          <!-- Barrinha com tamanhos e botão -->
-          <div
-            class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md py-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out flex gap-2 items-start"
-          >
-            <!-- Tamanhos -->
-            <div class="flex gap-1">
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                P
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                M
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                G
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                GG
-              </button>
-            </div>
-
-            <!-- Botão Adicionar -->
-            <button
-              class="bg-black text-white text-sm px-4 py-2 rounded hover:bg-gray-800 transition"
-            >
-              Adicionar
-            </button>
-          </div>
-        </div>
-
-        <!-- Informações do produto -->
-        <div class="mt-2 space-y-1">
-          <p class="text-sm text-gray-700">camisa polo básica masculina super - rosa</p>
-          <div class="flex items-center gap-2">
-            <p class="text-sm text-gray-400 line-through">R$ 159,99</p>
-            <p class="text-lg font-bold text-gray-900">R$ 119,99</p>
-          </div>
-          <p class="text-sm text-gray-500">2x R$ 60,00 sem juros</p>
-        </div>
-      </div>
-      <div
-        class="relative min-w-[300px] border rounded shadow-md h-[470px] p-2 group overflow-hidden"
-      >
-        <!-- Wrapper da imagem com altura fixa -->
-        <div class="relative h-[360px] overflow-hidden rounded-sm">
-          <!-- Imagem principal -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3424679-880-auto&w=1280&q=100"
-            alt="Produto"
-            class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
-          />
-
-          <!-- Imagem ao passar o mouse -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3424694-880-auto&w=1280&q=100"
-            alt="Produto Hover"
-            class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
-          />
-
-          <!-- Barrinha com tamanhos e botão -->
-          <div
-            class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md py-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out flex gap-2 items-start"
-          >
-            <!-- Tamanhos -->
-            <div class="flex gap-1">
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                P
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                M
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                G
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                GG
-              </button>
-            </div>
-
-            <!-- Botão Adicionar -->
-            <button
-              class="bg-black text-white text-sm px-4 py-2 rounded hover:bg-gray-800 transition"
-            >
-              Adicionar
-            </button>
-          </div>
-        </div>
-
-        <!-- Informações do produto -->
-        <div class="mt-2 space-y-1">
-          <p class="text-sm text-gray-700">Camisa polo masculina manga cuta - bege</p>
-          <div class="flex items-center gap-2">
-            <p class="text-sm text-gray-400 line-through">R$ 159,99</p>
-            <p class="text-lg font-bold text-gray-900">R$ 119,99</p>
-          </div>
-          <p class="text-sm text-gray-500">2x R$ 60,00 sem juros</p>
-        </div>
-      </div>
-      <div
-        class="relative min-w-[300px] border rounded shadow-md h-[470px] p-2 group overflow-hidden"
-      >
-        <!-- Wrapper da imagem com altura fixa -->
-        <div class="relative h-[360px] overflow-hidden rounded-sm">
-          <!-- Imagem principal -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3366788-880-auto&w=1280&q=100"
-            alt="Produto"
-            class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
-          />
-
-          <!-- Imagem ao passar o mouse -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3366805-880-auto&w=1280&q=100"
-            alt="Produto Hover"
-            class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
-          />
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+            src="https://player.vimeo.com/progressive_redirect/playback/1049393540/rendition/720p/file.mp4?loc=external&signature=bb82b1f80a12e429ca031764385f6159efb2e5ccca1b90f0c6a1bee0eb0588d5"
+          ></video>
 
           <!-- Barrinha com tamanhos e botão -->
           <div
@@ -614,33 +373,36 @@
         <!-- Informações do produto -->
         <div class="mt-2 space-y-1">
           <p class="text-sm text-gray-700">
-            Top esportivo canelado sem costura - laranja
+            kimono feminino estampado manga 7/8 com linho - marrom
           </p>
           <div class="flex items-center gap-2">
-            <p class="text-sm text-gray-400 line-through">R$ 169,99</p>
-            <p class="text-lg font-bold text-gray-900">R$ 139,99</p>
+            <p class="text-sm text-gray-400 line-through">R$ 239,99</p>
+            <p class="text-lg font-bold text-gray-900">R$ 119,99</p>
           </div>
-          <p class="text-sm text-gray-500">2x R$ 70,00 sem juros</p>
+          <p class="text-sm text-gray-500">2x R$ 60,00 sem juros</p>
         </div>
       </div>
       <div
-        class="relative min-w-[300px] border rounded shadow-md h-[470px] p-2 group overflow-hidden"
+        class="relative min-w-[300px] border rounded shadow-md h-[500px] p-2 group overflow-hidden"
       >
         <!-- Wrapper da imagem com altura fixa -->
-        <div class="relative h-[360px] overflow-hidden rounded-sm">
+        <div class="relative h-[380px] overflow-hidden rounded-sm">
           <!-- Imagem principal -->
           <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3422992-880-auto&w=1280&q=100"
+            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F2702957-880-auto&w=1280&q=100"
             alt="Produto"
             class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
           />
 
           <!-- Imagem ao passar o mouse -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3423012-880-auto&w=1280&q=100"
-            alt="Produto Hover"
-            class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
-          />
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+            src="https://player.vimeo.com/progressive_redirect/playback/1049393409/rendition/720p/file.mp4?loc=external&signature=1210c75cc17851f51a1a107be0ef60ac10f22823c8e3fb54c42adc0626a00abc"
+          ></video>
 
           <!-- Barrinha com tamanhos e botão -->
           <div
@@ -681,78 +443,368 @@
 
         <!-- Informações do produto -->
         <div class="mt-2 space-y-1">
-          <p class="text-sm text-gray-700">Top esportivo canelado sem costura - verde</p>
-          <div class="flex items-center gap-2">
-            <p class="text-sm text-gray-400 line-through">R$ 169,99</p>
-            <p class="text-lg font-bold text-gray-900">R$ 139,99</p>
-          </div>
-          <p class="text-sm text-gray-500">2x R$ 70,00 sem juros</p>
-        </div>
-      </div>
-      <div
-        class="relative min-w-[300px] border rounded shadow-md h-[470px] p-2 group overflow-hidden"
-      >
-        <!-- Wrapper da imagem com altura fixa -->
-        <div class="relative h-[360px] overflow-hidden rounded-sm">
-          <!-- Imagem principal -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F2838449-880-auto&w=1280&q=100"
-            alt="Produto"
-            class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
-          />
-
-          <!-- Imagem ao passar o mouse -->
-          <img
-            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F2838460-880-auto&w=1280&q=100"
-            alt="Produto Hover"
-            class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
-          />
-
-          <!-- Barrinha com tamanhos e botão -->
-          <div
-            class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md py-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out flex gap-2 items-start"
-          >
-            <!-- Tamanhos -->
-            <div class="flex gap-1">
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                P
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                M
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                G
-              </button>
-              <button
-                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
-              >
-                GG
-              </button>
-            </div>
-
-            <!-- Botão Adicionar -->
-            <button
-              class="bg-black text-white text-sm px-4 py-2 rounded hover:bg-gray-800 transition"
-            >
-              Adicionar
-            </button>
-          </div>
-        </div>
-
-        <!-- Informações do produto -->
-        <div class="mt-2 space-y-1">
-          <p class="text-sm text-gray-700">Jaqueta Puffer Masculina Matelassê – Verde</p>
+          <p class="text-sm text-gray-700">
+            Blazer feminino eco outono/inverno - laranja
+          </p>
           <div class="flex items-center gap-2">
             <p class="text-sm text-gray-400 line-through">R$ 399,99</p>
-            <p class="text-lg font-bold text-gray-900">R$ 319,99</p>
+            <p class="text-lg font-bold text-gray-900">R$ 199,99</p>
           </div>
-          <p class="text-sm text-gray-500">6x de R$ 53,33 sem juros</p>
+          <p class="text-sm text-gray-500">3x R$ 66,66 sem juros sem juros</p>
+        </div>
+      </div>
+      <div
+        class="relative min-w-[300px] border rounded shadow-md h-[500px] p-2 group overflow-hidden"
+      >
+        <!-- Wrapper da imagem com altura fixa -->
+        <div class="relative h-[380px] overflow-hidden rounded-sm">
+          <!-- Imagem principal -->
+          <img
+            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3198724-880-auto&w=1280&q=100"
+            alt="Produto"
+            class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+          />
+
+          <!-- Imagem ao passar o mouse -->
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+            src="https://player.vimeo.com/progressive_redirect/playback/1049394068/rendition/720p/file.mp4?loc=external&signature=f72bb2fd216cfcbbefa9ce34b4d44187293e3006919e69f383f752eff46e8ecf"
+          ></video>
+
+          <!-- Barrinha com tamanhos e botão -->
+          <div
+            class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md py-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out flex gap-2 items-start"
+          >
+            <!-- Tamanhos -->
+            <div class="flex gap-1">
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                P
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                M
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                G
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                GG
+              </button>
+            </div>
+
+            <!-- Botão Adicionar -->
+            <button
+              class="bg-black text-white text-sm px-4 py-2 rounded hover:bg-gray-800 transition"
+            >
+              Adicionar
+            </button>
+          </div>
+        </div>
+
+        <!-- Informações do produto -->
+        <div class="mt-2 space-y-1">
+          <p class="text-sm text-gray-700">
+            Camiseta básica masculina manga curta pima - vinho
+          </p>
+          <div class="flex items-center gap-2">
+            <p class="text-sm text-gray-400 line-through">R$ 259,99</p>
+            <p class="text-lg font-bold text-gray-900">R$ 199,99</p>
+          </div>
+          <p class="text-sm text-gray-500">3x R$ 66,66 sem juros</p>
+        </div>
+      </div>
+      <div
+        class="relative min-w-[300px] border rounded shadow-md h-[500px] p-2 group overflow-hidden"
+      >
+        <!-- Wrapper da imagem com altura fixa -->
+        <div class="relative h-[380px] overflow-hidden rounded-sm">
+          <!-- Imagem principal -->
+          <img
+            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3210558-880-auto&w=1280&q=100"
+            alt="Produto"
+            class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+          />
+
+          <!-- Imagem ao passar o mouse -->
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+            src="https://player.vimeo.com/progressive_redirect/playback/1028547574/rendition/1080p/file.mp4?loc=external&signature=70450fdbd97777259579b162a2c051f73c773e04f3a480f36cca788c9a22bbd8"
+          ></video>
+
+          <!-- Barrinha com tamanhos e botão -->
+          <div
+            class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md py-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out flex gap-2 items-start"
+          >
+            <!-- Tamanhos -->
+            <div class="flex gap-1">
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                P
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                M
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                G
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                GG
+              </button>
+            </div>
+
+            <!-- Botão Adicionar -->
+            <button
+              class="bg-black text-white text-sm px-4 py-2 rounded hover:bg-gray-800 transition"
+            >
+              Adicionar
+            </button>
+          </div>
+        </div>
+
+        <!-- Informações do produto -->
+        <div class="mt-2 space-y-1">
+          <p class="text-sm text-gray-700">
+            camiseta básica masculina manga curta em malha h+ - branco
+          </p>
+          <div class="flex items-center gap-2">
+            <p class="text-sm text-gray-400 line-through">R$ 79,99</p>
+            <p class="text-lg font-bold text-gray-900">R$ 39,99</p>
+          </div>
+          <p class="text-sm text-gray-500">1x R$ 39,99 sem juros</p>
+        </div>
+      </div>
+      <div
+        class="relative min-w-[300px] border rounded shadow-md h-[500px] p-2 group overflow-hidden"
+      >
+        <!-- Wrapper da imagem com altura fixa -->
+        <div class="relative h-[380px] overflow-hidden rounded-sm">
+          <!-- Imagem principal -->
+          <img
+            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F2692306-880-auto&w=1280&q=100"
+            alt="Produto"
+            class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+          />
+
+          <!-- Imagem ao passar o mouse -->
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+            src="https://player.vimeo.com/progressive_redirect/playback/1049332052/rendition/1080p/file.mp4?loc=external&signature=b3aef2869bbb82920f475e75274d03b549a31aa0fde499643b2a65304189025d"
+          ></video>
+
+          <!-- Barrinha com tamanhos e botão -->
+          <div
+            class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md py-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out flex gap-2 items-start"
+          >
+            <!-- Tamanhos -->
+            <div class="flex gap-1">
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                P
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                M
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                G
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                GG
+              </button>
+            </div>
+
+            <!-- Botão Adicionar -->
+            <button
+              class="bg-black text-white text-sm px-4 py-2 rounded hover:bg-gray-800 transition"
+            >
+              Adicionar
+            </button>
+          </div>
+        </div>
+
+        <!-- Informações do produto -->
+        <div class="mt-2 space-y-1">
+          <p class="text-sm text-gray-700">
+            Camiseta masculina manga curta fio tinto bossa - verde
+          </p>
+          <div class="flex items-center gap-2">
+            <p class="text-sm text-gray-400 line-through">R$ 159,99</p>
+            <p class="text-lg font-bold text-gray-900">R$ 99,99</p>
+          </div>
+          <p class="text-sm text-gray-500">1x R$ R$ 99,99 sem juros</p>
+        </div>
+      </div>
+      <div
+        class="relative min-w-[300px] border rounded shadow-md h-[500px] p-2 group overflow-hidden"
+      >
+        <!-- Wrapper da imagem com altura fixa -->
+        <div class="relative h-[380px] overflow-hidden rounded-sm">
+          <!-- Imagem principal -->
+          <img
+            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3446144-880-auto&w=1280&q=100"
+            alt="Produto"
+            class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+          />
+
+          <!-- Imagem ao passar o mouse -->
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+            src="https://player.vimeo.com/progressive_redirect/playback/1049331437/rendition/1080p/file.mp4?loc=external&signature=2ad8cadc9420555f0bbc07d5547f59fbdd2ec103ff6e5067f6874ac95304a275"
+          ></video>
+
+          <!-- Barrinha com tamanhos e botão -->
+          <div
+            class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md py-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out flex gap-2 items-start"
+          >
+            <!-- Tamanhos -->
+            <div class="flex gap-1">
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                P
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                M
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                G
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                GG
+              </button>
+            </div>
+
+            <!-- Botão Adicionar -->
+            <button
+              class="bg-black text-white text-sm px-4 py-2 rounded hover:bg-gray-800 transition"
+            >
+              Adicionar
+            </button>
+          </div>
+        </div>
+
+        <!-- Informações do produto -->
+        <div class="mt-2 space-y-1">
+          <p class="text-sm text-gray-700">
+            Camiseta masculina manga curta com estampa - branco
+          </p>
+          <div class="flex items-center gap-2">
+            <p class="text-sm text-gray-400 line-through">R$ 119,99</p>
+            <p class="text-lg font-bold text-gray-900">R$ 79,99</p>
+          </div>
+          <p class="text-sm text-gray-500">1x R$ 79,99 sem juros</p>
+        </div>
+      </div>
+      <div
+        class="relative min-w-[300px] border rounded shadow-md h-[500px] p-2 group overflow-hidden"
+      >
+        <!-- Wrapper da imagem com altura fixa -->
+        <div class="relative h-[380px] overflow-hidden rounded-sm">
+          <!-- Imagem principal -->
+          <img
+            src="https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F2971408-880-auto&w=1280&q=100"
+            alt="Produto"
+            class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+          />
+
+          <!-- Imagem ao passar o mouse -->
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+            src="https://player.vimeo.com/progressive_redirect/playback/1049332243/rendition/1080p/file.mp4?loc=external&signature=927efe25f32ba14cc70bd3dd329760cba4c6cdf48e00da640cc96be582eeacde"
+          ></video>
+          <!-- Barrinha com tamanhos e botão -->
+          <div
+            class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md py-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out flex gap-2 items-start"
+          >
+            <!-- Tamanhos -->
+            <div class="flex gap-1">
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                P
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                M
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                G
+              </button>
+              <button
+                class="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-black hover:text-white transition"
+              >
+                GG
+              </button>
+            </div>
+
+            <!-- Botão Adicionar -->
+            <button
+              class="bg-black text-white text-sm px-4 py-2 rounded hover:bg-gray-800 transition"
+            >
+              Adicionar
+            </button>
+          </div>
+        </div>
+
+        <!-- Informações do produto -->
+        <div class="mt-2 space-y-1">
+          <p class="text-sm text-gray-700">
+            regata básica masculina slim em ribana canelada - off white
+          </p>
+          <div class="flex items-center gap-2">
+            <p class="text-sm text-gray-400 line-through">R$ 99,99</p>
+            <p class="text-lg font-bold text-gray-900">R$ 69,99</p>
+          </div>
+          <p class="text-sm text-gray-500">1x de R$ 69,99 sem juros</p>
         </div>
       </div>
     </div>
