@@ -1,0 +1,41 @@
+/* Até 480px (celulares pequenos) */
+@media (min-width: 491px) and (max-width: 650px) {
+  .button-next {
+    left: 400px;
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* De 481px até 768px (celulares grandes / tablets pequenos) */
+@media (min-width: 581px) and (max-width: 768px) {
+  .button-next {
+    left: 650px;
+    bottom: 10px;
+
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* De 769px até 1024px (tablets grandes / notebooks pequenos) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .button-next {
+    left: 700px;
+    padding: 12px;
+    width: 52px;
+    height: 52px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1024px) {
+  .button-next {
+    left: 900px;
+    padding: 12px;
+    width: 52px;
+    height: 52px;
+  }
+}
+
+/* Acima de 1024px (desktops) */

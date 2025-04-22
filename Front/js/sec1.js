@@ -47,7 +47,8 @@
           dots[i].classList.remove("bg-gray-800");
           dots[i].classList.add("bg-gray-400");
         }
-        if (dots[swiper.realIndex]) dots[swiper.realIndex].classList.add("bg-gray-800");
+        if (dots[swiper.realIndex])
+          dots[swiper.realIndex].classList.add("bg-gray-800");
       };
 
       updatePagination(); // Inicial

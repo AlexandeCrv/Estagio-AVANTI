@@ -1,71 +1,85 @@
-<header class="flex p-3 justify-between">
-  <div class="flex ml-[100px]">
-    <img src="/Front/imgs/AVANTI.png" class="h-8" alt="" />
-    <div class="relative">
-      <img src="../imgs/lupa.png" class="absolute top-0 right-2" alt="" />
+<header
+  class="flex flex-col md:flex-row p-4 md:p-6 justify-between items-center gap-4 md:gap-0"
+>
+  <!-- Lado Esquerdo -->
+  <div
+    class="flex flex-col md:flex-row items-center w-full md:w-auto gap-4 md:ml-10"
+  >
+    <img src="../imgs/AVANTI.png" class="h-8" alt="Logo" />
+    <div class="relative w-full md:w-[450px]">
+      <img
+        src="../imgs/lupa.png"
+        class="absolute top-2 right-3 w-4 h-4"
+        alt="Lupa"
+      />
       <input
-        class="border-[#eeeee] border-2 rounded-lg ml-14 w-[450px] h-8 placeholder-slate-600 text-xs focus:outline-none px-5 py-2"
+        class="w-full border border-[#eee] rounded-full pl-5 pr-10 py-2 text-xs placeholder-slate-600 focus:outline-none"
         type="search"
         placeholder="Digite aqui o que você procura"
       />
     </div>
   </div>
-  <section class="w-[500px]">
-    <div>
-      <div class="flex justify-between">
-        <div class="flex">
-          <figure>
-            <img
-              src="../imgs/contato.png"
-              alt=""
-              class="cursor-pointer"
-              id="abrirModal"
-            />
-          </figure>
-          <div>
-            <p class="w-10 text-[11px] ml-2 flex">Olá</p>
-            <p class="w-20 text-[11px] ml-2 flex flex-wrap">Nome cliente!</p>
-          </div>
-          <div class="mr-0 w-20">
-            <div class="relative">
-              <img
-                src="../imgs/carrinho.png"
-                alt="Carrinho"
-                class="cursor-pointer"
-                id="carrinho"
-              />
-              <span
-                id="contador-carrinho"
-                class="absolute -top-2 right-10 bg-blue-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full"
-              >
-                0
-              </span>
-            </div>
-          </div>
-        </div>
 
-        <div class="flex items-center">
-          <img src="../imgs//pin-de-localizacao.png" alt="" />
-          <div class="relative w-44 ml-2">
-            <input
-              type="number"
-              id="cepInput"
-              placeholder="Confira seu CEP"
-              class="w-full pl-2 pr-8 py-1 text-xs border border-gray-300 rounded-full focus:outline-none focus:ring-1 focus:ring-blue-500"
-            />
-            <button
-              onclick="buscarCEP()"
-              id="btnBuscarCEP"
-              class="absolute right-1 top-3 -translate-y-1/2 text-blue-600 text-xs"
-              title="Buscar CEP"
-            >
-              <span id="iconeBusca" class="">🔍</span>
-            </button>
-          </div>
+  <!-- Lado Direito -->
+  <section class="w-full md:w-auto">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+      <!-- Contato + Carrinho -->
+      <div class="flex items-center gap-2">
+        <figure>
+          <img
+            src="../imgs/contato.png"
+            alt="Contato"
+            class="cursor-pointer w-6 h-6"
+            id="abrirModal"
+          />
+        </figure>
+        <div>
+          <p class="text-[11px]">Olá</p>
+          <p class="text-[11px]">Nome cliente!</p>
+        </div>
+        <div class="relative">
+          <img
+            src="../imgs/carrinho.png"
+            alt="Carrinho"
+            class="cursor-pointer w-6 h-6"
+            id="carrinho"
+          />
+          <span
+            id="contador-carrinho"
+            class="absolute -top-2 -right-2 bg-blue-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full"
+          >
+            0
+          </span>
+        </div>
+      </div>
+
+      <!-- CEP -->
+      <div class="flex items-center w-full md:w-auto">
+        <img
+          src="../imgs/pin-de-localizacao.png"
+          alt="Localização"
+          class="w-4 h-4"
+        />
+        <div class="relative w-full md:w-44 ml-2">
+          <input
+            type="number"
+            id="cepInput"
+            placeholder="Confira seu CEP"
+            class="w-full pl-3 pr-8 py-2 text-xs border border-gray-300 rounded-full focus:outline-none focus:ring-1 focus:ring-blue-500"
+          />
+          <button
+            onclick="buscarCEP()"
+            id="btnBuscarCEP"
+            class="absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 text-xs"
+            title="Buscar CEP"
+          >
+            🔍
+          </button>
         </div>
       </div>
     </div>
   </section>
+
   <!-- Modal -->
   <div
     id="modal"
@@ -88,7 +102,9 @@
       <!-- Corpo -->
       <div class="">
         <h2 class="text-xl font-semibold mb-2">Bem-vindo!</h2>
-        <p class="text-sm mb-4">Por favor, selecione um provedor para criar sua conta:</p>
+        <p class="text-sm mb-4">
+          Por favor, selecione um provedor para criar sua conta:
+        </p>
 
         <div class="flex justify-around mb-4">
           <a
@@ -153,7 +169,9 @@
           </div>
 
           <div class="flex flex-col gap-2 text-sm mb-4">
-            <label><input type="checkbox" /> Aceito os termos e condições</label>
+            <label
+              ><input type="checkbox" /> Aceito os termos e condições</label
+            >
             <label><input type="checkbox" /> Manter-me conectado</label>
           </div>
 
