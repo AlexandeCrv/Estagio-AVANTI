@@ -15,10 +15,10 @@ function buscarCEP() {
     .then((res) => res.json())
     .then((data) => {
       if (data.erro) {
-        alert("CEP não encontrado!");
+        alert(`CEP ${cep} não encontrado!`);
       } else {
         alert(
-          `CEP encontrado!\n${data.logradouro}, ${data.bairro}, ${data.localidade} - ${data.uf}`
+          `CEP encontrado (${cep})!\n${data.logradouro}, ${data.bairro}, ${data.localidade} - ${data.uf}`
         );
       }
     })

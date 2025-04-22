@@ -6,16 +6,49 @@
   >
     <img src="../imgs/AVANTI.png" class="h-8" alt="Logo" />
     <div class="relative w-full md:w-[450px]">
-      <img
-        src="../imgs/lupa.png"
+      <!-- Botão da lupa -->
+      <button
+        id="searchButton"
         class="absolute top-2 right-3 w-4 h-4"
-        alt="Lupa"
-      />
+        type="button"
+      >
+        <img src="../imgs/lupa.png" class="w-4 h-4" alt="Lupa" />
+      </button>
+
+      <!-- Campo de busca -->
       <input
-        class="w-full border border-[#eee] rounded-full pl-5 pr-10 py-2 text-xs placeholder-slate-600 focus:outline-none"
+        id="searchInput"
+        class="w-[400px] border border-[#eee] rounded-full pl-5 pr-10 py-2 text-xs placeholder-slate-600 focus:outline-none"
         type="search"
-        placeholder="Digite aqui o que você procura"
+        placeholder="Apenas 'VESTIDO' e 'CAMISETA' na busca"
       />
+    </div>
+  </div>
+
+  <!-- Aqui aparece o resultado da busca -->
+  <!-- Substituir o <p id="searchResult"> por isso -->
+  <!-- Modal de resultado de busca -->
+  <div
+    id="searchModal"
+    class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+  >
+    <div class="bg-white rounded-xl shadow-lg p-6 w-11/12 max-w-4xl relative">
+      <button
+        id="closeSearchModal"
+        class="absolute top-3 right-3 text-xl text-gray-500 hover:text-black"
+      >
+        &times;
+      </button>
+      <div class="flex">
+        <img class="h-9 m-auto" src="../imgs/AVANTI.png" alt="" />
+      </div>
+
+      <div
+        id="searchResult"
+        class="grid grid-cols-3 md:grid-cols-3 gap-6 bg-white p-8 rounded-2xl w-full max-w-7xl max-h-[95vh] overflow-y-auto"
+      >
+        >
+      </div>
     </div>
   </div>
 
@@ -70,7 +103,7 @@
             class="absolute right-2 top-1/2 -translate-y-1/2 text-blue-600 text-xs"
             title="Buscar CEP"
           >
-            🔍
+            <span id="iconeBusca">🔍</span>
           </button>
         </div>
       </div>
@@ -184,4 +217,5 @@
       </div>
     </div>
   </div>
+  <script src="../js/busca.js"></script>
 </header>
