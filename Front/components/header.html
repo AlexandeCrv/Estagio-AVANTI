@@ -6,7 +6,6 @@
   >
     <img src="../imgs/AVANTI.png" class="h-8" alt="Logo" />
     <div class="relative w-full md:w-[450px]">
-      <!-- Botão da lupa -->
       <button
         id="searchButton"
         class="absolute top-2 right-3 w-4 h-4"
@@ -15,7 +14,6 @@
         <img src="../imgs/lupa.png" class="w-4 h-4" alt="Lupa" />
       </button>
 
-      <!-- Campo de busca -->
       <input
         id="searchInput"
         class="w-[400px] border border-[#eee] rounded-full pl-5 pr-10 py-2 text-xs placeholder-slate-600 focus:outline-none"
@@ -25,9 +23,6 @@
     </div>
   </div>
 
-  <!-- Aqui aparece o resultado da busca -->
-  <!-- Substituir o <p id="searchResult"> por isso -->
-  <!-- Modal de resultado de busca -->
   <div
     id="searchModal"
     class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
@@ -39,16 +34,14 @@
       >
         &times;
       </button>
-      <div class="flex">
-        <img class="h-9 m-auto" src="../imgs/AVANTI.png" alt="" />
+      <div class="flex justify-center mb-6">
+        <img class="h-9" src="../imgs/AVANTI.png" alt="" />
       </div>
 
       <div
         id="searchResult"
-        class="grid grid-cols-3 md:grid-cols-3 gap-6 bg-white p-8 rounded-2xl w-full max-w-7xl max-h-[95vh] overflow-y-auto"
-      >
-        >
-      </div>
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-white p-4 rounded-2xl w-full max-h-[95vh] overflow-y-auto"
+      ></div>
     </div>
   </div>
 

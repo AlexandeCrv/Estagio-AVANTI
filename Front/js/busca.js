@@ -91,7 +91,6 @@ const observer = new MutationObserver(() => {
       searchModal.classList.add("hidden");
     });
 
-    // Fechar o modal ao pressionar ESC
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         searchModal.classList.add("hidden");
