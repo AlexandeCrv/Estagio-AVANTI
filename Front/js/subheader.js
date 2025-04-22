@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
     const mobileMenu = document.getElementById("mobile-menu");
 
-    console.log(mobileMenuToggle, mobileMenu); // Verifique novamente se estão sendo encontrados
+    console.log(mobileMenuToggle, mobileMenu);
 
     if (mobileMenuToggle && mobileMenu) {
       mobileMenuToggle.addEventListener("click", function () {
@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("Elementos não encontrados. Verifique os IDs.");
     }
 
-    // Mobile submenu toggles
     const mobileSubmenuToggles = document.querySelectorAll(
       ".mobile-submenu-toggle"
     );
@@ -40,5 +39,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     });
-  }, 500); // Aguarda 500ms antes de tentar acessar os elementos
+  }, 500);
 });

@@ -15,7 +15,6 @@ function toggleSenha(id) {
   input.type = input.type === "password" ? "text" : "password";
 }
 
-// Ativa modal ao clicar na imagem de contato
 document.addEventListener("DOMContentLoaded", () => {
   const verificarModal = setInterval(() => {
     const botaoModal = document.getElementById("abrirModal");

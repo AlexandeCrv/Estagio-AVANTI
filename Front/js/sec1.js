@@ -4,7 +4,7 @@
     const paginationContainer = document.getElementById("pagination");
 
     if (carousell && paginationContainer) {
-      clearInterval(interval); // Parar o loop
+      clearInterval(interval);
 
       const totalItems = carousell.querySelectorAll(".swiper-slide").length;
 
@@ -24,10 +24,8 @@
         },
       });
 
-      // LIMPA as bolinhas antigas se já houver
       paginationContainer.innerHTML = "";
 
-      // Criar as bolinhas
       for (let i = 0; i < totalItems; i++) {
         const dot = document.createElement("div");
         dot.className =
@@ -51,7 +49,7 @@
           dots[swiper.realIndex].classList.add("bg-gray-800");
       };
 
-      updatePagination(); // Inicial
+      updatePagination();
     }
   }, 50);
 })();

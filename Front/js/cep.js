@@ -8,8 +8,7 @@ function buscarCEP() {
     return;
   }
 
-  // Mostra carregando
-  icone.innerHTML = "⏳"; // Você pode trocar por um spinner se quiser
+  icone.innerHTML = "⏳";
   btn.disabled = true;
 
   fetch(`https://viacep.com.br/ws/${cep}/json/`)
@@ -27,7 +26,6 @@ function buscarCEP() {
       alert("Erro ao buscar o CEP. Tente novamente.");
     })
     .finally(() => {
-      // Restaura o botão
       icone.innerHTML = "🔍";
       btn.disabled = false;
     });

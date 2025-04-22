@@ -6,16 +6,15 @@
     const dotsContainer = document.getElementById("dots");
 
     if (carousel && next && prev && dotsContainer) {
-      clearInterval(interval); // parar o loop
+      clearInterval(interval);
 
-      const scrollAmount = 240; // mesmo valor do seu scrollBy
+      const scrollAmount = 240;
       const totalItems = carousel.children.length;
       const visibleItems = Math.floor(carousel.offsetWidth / scrollAmount);
       const totalPages = Math.ceil(totalItems / visibleItems);
 
       let currentIndex = 0;
 
-      // Cria os dots
       for (let i = 0; i < totalPages; i++) {
         const dot = document.createElement("div");
         dot.className =
@@ -45,7 +44,10 @@
         const maxIndex = totalPages - 1;
         if (currentIndex < maxIndex) {
           currentIndex++;
-          carousel.scrollBy({ left: scrollAmount * visibleItems, behavior: "smooth" });
+          carousel.scrollBy({
+            left: scrollAmount * visibleItems,
+            behavior: "smooth",
+          });
           updateDots();
         }
       });
@@ -53,7 +55,10 @@
       prev.addEventListener("click", () => {
         if (currentIndex > 0) {
           currentIndex--;
-          carousel.scrollBy({ left: -scrollAmount * visibleItems, behavior: "smooth" });
+          carousel.scrollBy({
+            left: -scrollAmount * visibleItems,
+            behavior: "smooth",
+          });
           updateDots();
         }
       });

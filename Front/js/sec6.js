@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
   const dotsContainer = document.getElementById("promo-dots");
 
   if (carousel && next && prev && dotsContainer) {
-    const scrollAmount = 300; // tamanho de cada item
+    const scrollAmount = 300;
     const totalItems = carousel.children.length;
     const carouselVisibleWidth = carousel.offsetWidth;
 
@@ -14,10 +14,8 @@ window.addEventListener("load", () => {
 
     let currentIndex = 0;
 
-    // Limpa os dots antes de recriar
     dotsContainer.innerHTML = "";
 
-    // Cria os dots
     for (let i = 0; i < totalPages; i++) {
       const dot = document.createElement("div");
       dot.className =
@@ -47,7 +45,10 @@ window.addEventListener("load", () => {
       const maxIndex = totalPages - 1;
       if (currentIndex < maxIndex) {
         currentIndex++;
-        carousel.scrollBy({ left: scrollAmount * visibleItems, behavior: "smooth" });
+        carousel.scrollBy({
+          left: scrollAmount * visibleItems,
+          behavior: "smooth",
+        });
         updateDots();
       }
     });
@@ -55,7 +56,10 @@ window.addEventListener("load", () => {
     prev.addEventListener("click", () => {
       if (currentIndex > 0) {
         currentIndex--;
-        carousel.scrollBy({ left: -scrollAmount * visibleItems, behavior: "smooth" });
+        carousel.scrollBy({
+          left: -scrollAmount * visibleItems,
+          behavior: "smooth",
+        });
         updateDots();
       }
     });
