@@ -24,7 +24,7 @@ const produtosFake = [
     descriçao: "Vestido curto manga longa em tricô - vinho",
     nome: "vestido",
     imagem:
-      "https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3478632-880-auto&w=1280&q=100",
+      "https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3501272-880-auto&w=1280&q=100",
     preco: "R$ 219,99",
   },
   {
@@ -38,7 +38,7 @@ const produtosFake = [
     descriçao: "Vestido curto manga longa em tricô - creme",
     nome: "Vestido",
     imagem:
-      "https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3478635-880-auto&w=1280&q=100",
+      "https://www.hering.com.br/_next/image?url=https%3A%2F%2Fhering.vtexassets.com%2Farquivos%2Fids%2F3501273-880-auto&w=1280&q=100",
     preco: "R$ 290,99",
   },
 ];
@@ -50,13 +50,7 @@ const observer = new MutationObserver(() => {
   const searchModal = document.getElementById("searchModal");
   const closeSearchModal = document.getElementById("closeSearchModal");
 
-  if (
-    searchButton &&
-    searchInput &&
-    searchResult &&
-    searchModal &&
-    closeSearchModal
-  ) {
+  if (searchButton && searchInput && searchResult && searchModal && closeSearchModal) {
     console.log("Buscador finalmente encontrado no DOM!");
 
     searchButton.addEventListener("click", () => {
